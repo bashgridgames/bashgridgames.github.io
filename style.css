@@ -1,0 +1,32 @@
+/* Bash Grid website. Fonts are hosted here too (nothing is loaded from Google Fonts or anywhere else). */
+@font-face { font-family: 'Lilita One'; font-weight: 400; font-display: swap; src: url(fonts/LilitaOne-latin.woff2) format('woff2'); }
+@font-face { font-family: 'Nunito'; font-weight: 400 900; font-display: swap; src: url(fonts/Nunito-latin.woff2) format('woff2'); }
+
+:root { --sky: #2B3A7A; --navy: #1C2150; --gold: #ffcf3a; --text: #f4f5ff; --muted: #c3c7ee; }
+* { box-sizing: border-box; }
+html { background: var(--navy); }
+body {
+  margin: 0; min-height: 100vh; color: var(--text); line-height: 1.6;
+  font-family: 'Nunito', system-ui, sans-serif; font-size: 17px;
+  background: linear-gradient(180deg, var(--sky), var(--navy) 420px);
+}
+main { max-width: 760px; margin: 0 auto; padding: 28px 20px 48px; }
+header { display: flex; align-items: center; gap: 14px; margin-bottom: 8px; }
+header img { width: 56px; height: 56px; border-radius: 14px; }
+header a { color: inherit; text-decoration: none; display: flex; align-items: center; gap: 14px; }
+h1, h2 { font-family: 'Lilita One', system-ui, sans-serif; font-weight: 400; line-height: 1.2; }
+h1 { font-size: 2.3rem; margin: 0; }
+h2 { font-size: 1.35rem; margin: 2rem 0 .4rem; color: var(--gold); }
+h3 { font-size: 1.05rem; margin: 1.2rem 0 .2rem; }
+p, li { color: var(--text); }
+.muted { color: var(--muted); }
+a { color: var(--gold); }
+ul { padding-left: 1.3em; }
+.card { background: rgba(255,255,255,.07); border-radius: 16px; padding: 4px 20px 14px; margin: 18px 0; }
+.btn {
+  display: inline-block; background: var(--gold); color: #3a2600; text-decoration: none;
+  font-family: 'Lilita One', system-ui, sans-serif; font-size: 1.2rem; padding: 10px 22px; border-radius: 14px; margin: 6px 8px 6px 0;
+}
+.btn.ghost { background: rgba(255,255,255,.12); color: var(--text); font-family: 'Nunito', sans-serif; font-weight: 800; font-size: 1rem; }
+footer { margin-top: 40px; font-size: .9rem; color: var(--muted); }
+footer a { color: var(--muted); }
